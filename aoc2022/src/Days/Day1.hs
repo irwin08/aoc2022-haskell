@@ -21,7 +21,7 @@ main :: IO ()
 main = do
   content <- readFile "data\\day1-p1.txt"  
   let linesOfFile = lines content
-  let formatted :: [[ItemCalories]] = (map . map) (read :: String -> ItemCalories) $ spliterino linesOfFile
+  let formatted  = (map . map) (read :: String -> ItemCalories) $ spliterino linesOfFile
 
   -- part 1
   

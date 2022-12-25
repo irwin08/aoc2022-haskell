@@ -17,20 +17,20 @@ extra-source-files:  README.md
 library
   exposed-modules:
     Days.Day1
-    Days.Day2
-    Days.Day3
-    Days.Day4
-    Days.Day5
-    Days.Day6
-    Days.Day7
   hs-source-dirs: src
   default-language:    Haskell2010
   build-depends:       base >= 4.7 && < 5,
                        directory >= 1.3.6.2,
-                       split,
-                       extra,
-                       containers
-  ghc-options:
+                       sok
+  ghc-options:         -Wall
+                       -Wcompat
+                       -Widentities
+                       -Wincomplete-record-updates
+                       -Wincomplete-uni-patterns
+                       -Wmissing-export-lists
+                       -Wmissing-home-modules
+                       -Wpartial-fields
+                       -Wredundant-constraints
                      
 executable aoc2022
   hs-source-dirs:      app
